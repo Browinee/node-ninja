@@ -1,5 +1,5 @@
 {
-  "name": "node-ninja",
+  "name": "cli-progress",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,8 +10,10 @@
   "keywords": [],
   "author": "justin",
   "license": "ISC",
+  "dependencies": {
+    "ansi-escapes": "^7.0.0"
+  },
   "devDependencies": {
-    "@types/node": "^22.7.9",
-    "typescript": "^5.6.3"
+    "chalk": "^5.3.0"
   }
 }
