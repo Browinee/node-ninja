@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      const ws = new WebSocket("ws://localhost:8080");
+
+      ws.onopen = function () {
+        ws.send("send data 1");
+        setTimeout(() => {
+          ws.send("send data 2");
+        }, 3000);
+      };
+
+      ws.onmessage = function (evt) {
+        console.log(evt);
+      };
+
+      ws.onclose = function () {};
+    </script>
+  </body>
+</html>
