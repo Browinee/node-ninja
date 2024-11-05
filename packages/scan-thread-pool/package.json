@@ -1,0 +1,21 @@
+{
+  "name": "scan-thread-pool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "justin",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.8.1",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "get-folder-size": "^5.0.0",
+    "rxjs": "^7.8.1"
+  }
+}
