@@ -1,0 +1,17 @@
+{
+  "name": "keyboard-control",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "justin",
+  "license": "ISC",
+  "dependencies": {
+    "ansi-escapes": "^7.0.0",
+    "chalk": "^5.3.0"
+  }
+}
