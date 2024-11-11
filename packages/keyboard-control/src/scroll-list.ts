@@ -19,7 +19,7 @@ export class ScrollList extends BaseUi {
 
     const action: Function = this.KEYS[name];
     action();
-    // this.render();
+    this.render();
   }
 
   private readonly KEYS = {
@@ -75,9 +75,6 @@ export class ScrollList extends BaseUi {
   }
 
   render() {
-    debugger;
-    console.log("this", this.terminalSize);
-
     const visibleList = this.list.slice(
       this.scrollTop,
       this.scrollTop + this.terminalSize.rows

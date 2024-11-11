@@ -41,6 +41,7 @@ const list = new ScrollList([
 ]);
 
 process.stdin.on("keypress", (str, key) => {
+  console.log("key", key);
   if (key.sequence === "\u0003") {
     process.stdout.write(ansiEscapes.clearTerminal);
     process.exit();
