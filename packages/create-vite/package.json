@@ -1,0 +1,20 @@
+{
+  "name": "create-vite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "justin",
+  "license": "ISC",
+  "dependencies": {
+    "@types/minimist": "^1.2.5",
+    "@types/prompts": "^2.4.9",
+    "chalk": "^5.3.0",
+    "minimist": "^1.2.8",
+    "prompts": "^2.4.2"
+  }
+}
