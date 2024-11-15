@@ -1,6 +1,10 @@
 import blessed from "blessed";
 import contrib from "blessed-contrib";
 import CpuMonitor from "./monitor/cpu.js";
+import MemoryMonitor from "./monitor/memory.js";
+import NetworkMonitor from "./monitor/network.js";
+import DiskMonitor from "./monitor/disk.js";
+import ProcessMonitor from "./monitor/process.js";
 
 const screen = blessed.screen({
   fullUnicode: true,
@@ -41,8 +45,8 @@ const netSpark = grid.set(8, 0, 2, 6, contrib.sparkline, {
 });
 
 const diskDonut = grid.set(10, 0, 2, 6, contrib.donut, {
-  radius: 8,
-  arcWidth: 3,
+  radius: 4,
+  arcWidth: 2,
   label: "Disk Usage",
 });
 
@@ -62,3 +66,8 @@ screen.key("C-c", function () {
 });
 
 new CpuMonitor(cupLineChart).init()
+
+new MemoryMonitor(memLineChart, memDonut, swapDonut).init()
+new NetworkMonitor(netSpark).init()
+new DiskMonitor(diskDonut).init()
+new ProcessMonitor(processTable).init();
