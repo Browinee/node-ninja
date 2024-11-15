@@ -14,6 +14,7 @@
     "@types/node": "^22.8.1",
     "typescript": "^5.6.3"
   },
+  "private": true,
   "dependencies": {
     "get-folder-size": "^5.0.0",
     "rxjs": "^7.8.1"
