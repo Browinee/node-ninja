@@ -21,6 +21,8 @@ program.command('create')
   .description('create project')
   .action(async () => {
     create();
+    console.log("----end----");
+
   });
 
 program.parse();
