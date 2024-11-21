@@ -1,13 +1,10 @@
 {
-  "name": "@justinlin/cli",
-  "version": "0.2.1",
+  "name": "@justinlin/utils",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "types": "dist/index.d.ts",
-  "bin": {
-    "justinlin-cli": "./dist/index.js"
-  },
   "publishConfig": {
     "access": "public"
   },
@@ -18,11 +15,7 @@
   "author": "justin",
   "license": "ISC",
   "dependencies": {
-    "@justinlin/create": "workspace:^",
-    "commander": "^12.1.0",
-    "fs-extra": "^11.2.0"
-  },
-  "devDependencies": {
-    "@types/fs-extra": "^11.0.4"
+    "axios": "^1.7.7",
+    "npminstall": "^7.12.0"
   }
 }
