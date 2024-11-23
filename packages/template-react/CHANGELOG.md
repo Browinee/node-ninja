@@ -1,5 +1,11 @@
 # @justinlin/template-react
 
+## 1.3.0
+
+### Minor Changes
+
+- Support eslint close or open
+
 ## 1.2.0
 
 ### Minor Changes
