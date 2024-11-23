@@ -1,6 +1,6 @@
 {
   "name": "@justinlin/create",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publishConfig": {
     "access": "public"
   },
@@ -8,10 +8,21 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "pnpm --filter create exec npx tsc && pnpm --filter create exec node ./dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@inquirer/prompts": "^7.1.0",
+    "@justinlin/utils": "workspace:^",
+    "ejs": "^3.1.10",
+    "glob": "^11.0.0",
+    "ora": "^8.1.1"
+  },
+  "devDependencies": {
+    "@types/ejs": "^3.1.5"
+  }
 }
